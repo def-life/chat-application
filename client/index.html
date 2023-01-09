@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- A better approach would be to dynamically generate these elements -->
+    <div class="register-box">
+      <h2 class="heading">Register yourself</h2>
+      <div style="width: 70%; margin: 0 auto">
+        <div class="chatbox" style="margin-bottom: 1.4rem">
+          <label for="username">Enter Username</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <button class="regBtn">Submit</button>
+      </div>
+    </div>
+    <div class="section-2" style="opacity: 0">
+      <div class="heading">Let's Chat</div>
+      <div class="container">
+        <div class="online-users">
+          <h2>Online-Users</h2>
+          <ul class="users-list"></ul>
+        </div>
+        <div class="chatbox-container">
+          <div class="chatbox">
+            <label for="message"
+              >Type Message:<span id="typingUsers"></span
+            ></label>
+            <input type="text" name="message" id="message" />
+            <button disabled class="send">Send</button>
+          </div>
+          <div class="allMessages"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

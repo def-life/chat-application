@@ -1,0 +1,92 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(132deg, rgb(253, 54, 133) 0.00%, rgb(254, 207, 215) 100.00%);
+    background-size: 300% 100%;
+    animation: animateBg 5s linear 0ms infinite alternate;
+  }
+
+  @keyframes animateBg {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+
+  button {
+    color: white;
+    background-color: rgb(11, 92, 143);
+    padding: 0.8rem 1.8rem;
+    border: none;
+    font-size: 1rem;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    font-weight: bolder;
+    margin-bottom: 1.6rem;
+  }
+
+  .online-users {
+    flex-basis: 27%;
+  }
+
+  .chatbox-container {
+    width: 45%;
+  }
+
+  .chatbox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .chatbox > * {
+    font-size: 1.2rem;
+  }
+
+  .register-box.hide {
+    opacity: 0;
+    animation: fade-out 300ms linear 0s;
+  }
+
+  .users-list .green::after {
+    content: "";
+    background-color: green;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .users-list .yellow::after {
+    content: "";
+    background-color: yellow;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .allMessages {
+    max-height: 50vh;
+    margin-top: 14px;
+    overflow: auto;
+  }
